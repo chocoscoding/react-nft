@@ -1,0 +1,109 @@
+.header{
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header > div{
+    margin: 10px;
+}
+.punkLogo{
+    width: 200px;
+}
+.searchBar{
+    background-color:  #1c1c1e;
+    height: 50px;
+    flex: 1;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+}
+.searchIconContainer{
+    margin: 10px;
+}
+.searchInput{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    height: 100%;
+    color: #eee;
+    font-size: 16px;
+}
+.onresize{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+}
+.headerItems{
+    display: flex;
+    color: #a1a5b0;
+}
+.headerItems > p{
+    margin: 10px;
+}
+.headerActions{
+    display: flex;
+    align-items: center;
+}
+.headerActions > div{
+    margin: 10px;
+}
+.themeSwitchContainer{
+    display: flex;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #1c1c1e;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.themeSwitchContainer > img{
+    height: 23px;
+}
+.loginButton{
+    background: linear-gradient(to right, #59f9b7, #66feea);
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: #000;
+}
+
+
+@media screen and (max-width:1000px){
+    .onresize{
+        position: absolute ;
+        margin: 0px !important;
+        width: 50%;
+        backdrop-filter: blur(13px);
+        height: 0vh;
+        top: 0;
+        transition: 0.3s all ease;
+        right: 0;
+        flex-direction: column;
+        z-index: 3;
+        overflow: hidden;
+        background-color: rgba(35, 33, 33, 0.483);
+        row-gap: 30px;
+        column-gap: 30px;
+        align-items: center;
+        justify-content: flex-start;
+        /* padding-top: 7%; */
+    }
+    .headerItems{
+        flex-direction: column;
+        font-size: 40px;
+        align-content: flex-start;
+    }
+    .loginButton{
+        width: 50%;
+        text-align: center; 
+
+    }
+}
+@media screen and (max-width:528px) {
+    .punkLogo{
+        width: 95px;
+    }
+}
