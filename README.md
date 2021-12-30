@@ -8,4 +8,3 @@ So, it's not very fast:
 
 Enjoy my first blockchain thingy: https://chocoscoding-nft-min.netlify.app/
 
-CREDITS: @cleverprogrammer
